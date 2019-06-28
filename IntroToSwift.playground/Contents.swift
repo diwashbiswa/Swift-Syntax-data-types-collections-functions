@@ -5,6 +5,18 @@
 import UIKit
 //: # An introduction to Swift!
 
+/*:
+ ## <Reassuring preface>:
+ Before you start, you should be aware that  you are **not** expected to be an expert in Swift after this lesson.
+ 
+ You're not even expected to be an expert in Swift at the end of this program, either.
+ 
+ Furthermore, we understand that some people have been programming since they were 10 and some people just tried it for the first time this year.
+ 
+ It's ok!  Whereever you're at, however much time it takes you to get as comfortable with this as you want to be, it's all fine!  We're going to review this stuff here today, but we understand that (1) it would take *anyone* much more time to learn this stuff and (2) you've got a bunch of other things to learn too, like how to utilize user-focused design thinking to build an app that people will love.
+ */
+
+
 //: ## Printing to the console in the playground
 //: Printing is really easy in Swift, you can use the ***print()*** function to print to output like this:
 print("Hello, TNT!")
@@ -13,7 +25,7 @@ print("Hello, TNT!")
  Now below as an excercise, on three separate lines, print your first name, last name, and an interesting fact about yourself. Share with those around you.
  */
 
-//: ## Leading, not feeding
+//: ## Growth mindset
 //: Here in the TNT program we're looking to both challenge ***and*** support you.  One of the most important skills you
 //: can develop is that of applying a Growth Mindset to your learning.  In a nutshell - it's ok not 'get it' immediately
 //: as long as you try, try again!  We want to encourage everyone to be independent, autonomous ***and*** support you in
@@ -47,16 +59,8 @@ var myVariable = 42
 myVariable = 50
 let myConstant = 42
 
-
-///////////////////////////////////// TODO: What should you use - a var or a const?
-// current total cost for shopping cart
-// value of Pi
-// maximum number of players
-//
-
-
 //: As you can see above, we were able to change ***myVariable*** since it was instantiated with the ***var*** keyword. Try to change the value of *myConstant* below, what happens?
-myConstant = 5
+// myConstant = 5
 /*:
  You should get an error that tells you that you cannot assign a new value to a constant, **delete the above line to get rid of this error!**
  ### Excercise:
@@ -68,6 +72,27 @@ myConstant = 5
 // Create values here
 
 
+/*:
+ ### Excercise:
+ Work with the people in your group to discuss whether it would be better to use a **var** or a **let** to declare each of the following.  Also come up with a good, informative name for each var/let.
+ Feel free to scribble this on those post-it notes that are everywhere, or type it into your computer, etc, etc.
+ Be ready to share what your group came up with, with the rest of the class.
+ 
+ 1. Imagine that you're writing software to enable 'shopping cart' functionality in your app.  How would you declare something to store the current total cost of everything in ths shopping cart?
+ 2. The value of Pi, that number from math that's about 3.14159. (There's more, but I'll leave it out for brevity)  It's always been this number, it'll always be this number.
+ 3. The maximum number of players that your app can support at any one time.  Note: the app ships with a hard limit on the maximum number of players but we also want to be able to change this number in the next version of the game.
+ 4. What are some examples from your group's app that would be best stored in *var*s?
+ 5. What are some examples from your group's app that would be best stored in *let*s?
+ */
+
+/*: ## Data Types
+ 
+ ## Exercise:
+ Work with your group to find a list of built-in data types (like integers, strings, etc, etc).  Skim that list, and come up with a use for each of the data types.
+ 
+ Goal: It's good to be aware that different data types exist just in case they're useful later on.  Coming up with a user for each one will help make it meaningful for you.  The most valuable part of this is to have a general, probably hazy, awareness that these different types exist :)
+ 
+ */
 
 //: When assigning a value, if you do not explicitly assign the data type (String, int, double, boolean, etc) Swift will guess the data type itself. You can assign the data type by using: ***let/var [value name]:[data type] = [value].*** Take a look at examples below:
 let implicitInteger = 70
@@ -75,7 +100,7 @@ let implicitDouble = 70.0
 let explicitDouble: Double = 70
 /*:
  As you can see above, values ***implicitInteger*** and ***implicitDouble*** are implicit since they were not assigned a data type, so Swift assumed the data type for you. However, ***explicitDouble*** was explicitly assigned the Double data type.
- ### Excercise 3
+ ### Excercise:
  As an excercise below, try declaring the following values:
  - Explicit String variable named ***myGrade*** that equals your current grade in school.
  - Explicit integer constant named ***myBuilding*** that is the same as the number of the Microsoft building you are assigned.
@@ -103,7 +128,8 @@ print("I have \(applesCount) apples!")
  Do the following in the space below:
  1. Declare an explicit string variable named ***fiveString*** that refers to the string "5"
  2. Convert the string to an integer, storing it under the name ***fiveInt***
- 3. Print the variable ***fiveInt*** in any sentence you'd like*/
+ 3. Print the variable ***fiveInt*** in any sentence you'd like
+*/
 
 // create values here
 
@@ -120,8 +146,103 @@ print("Random sentence with five in it: \(fiveInt)") // ignore the warning over 
  2. ***How*** you figured this out
  */
 
-//: ## Conditional statements:
-//:
+/*: ## Conditional statements:
+ Open up [The docs on the Swift language from Apple on 'Control Flow'](https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html) and scroll down to the part that reads "Conditional Statements" (or do a Command-F to search for that text on the page).
+ 
+ Your instructor will walk you through the syntax for the 'if', the 'if/else', and the very first part of the 'switch' statements.  You're welcome to read the rest of the 'switch' stuff but it gets pretty technical pretty fast and you don't need most of it.  (It's good to be aware of what it is generally, and to find resources for how to figure out the details if you need it.
+ 
+ Once you've done that work through the following exercises:
+*/
+
+var temperature = 30
+/*:
+ ### Exercise
+ If the temperature is less than 42 degrees print a message saying "It's cold!"
+ 
+ ### Exercise
+ If the temperature is less than 42 degrees print a message saying "It's cold!", otherwise print a message of your choice (that's workplace appropriate, of course)
+ */
+
+/*: ## Self-care and your emotional health
+ 
+ It's good to be aware that, within the tech industry culture, it's pretty common to "learn programming" by puzzling out solutions to tricky problems.
+ 
+ */
+
+var companyName = "Microsoft"
+/*:
+ ### Exercise
+ If the companyName is Microsoft than print a message saying "MS rocks!", otherwise print a message saying "That's a great company!"
+ 
+ 
+ ### Exercise
+ Keep flexing your Growth Mindset muscles!
+ 
+ Figure out how to do the same sort of thing that you did for the previous exercise EXCEPT that this time you're not looking for "Microsoft" exactly - you're looking anything that matches regardless of case.  (This is sometimes called a *case* *insensitive* match)
+ 
+ 
+ ### Exercise
+ Work with your group and come up with 3 examples each of a situation where you might want to use a plain **if** statement, an **if/else** statement, and a **switch** statement in your app.  Don't worry if the examples aren't perfect - the goal here is to start thinking about this, not to be an expert :)
+ 
+ */
+
+/*: ## Repetition statements:
+ Open up [The docs on the Swift language from Apple on 'Control Flow'](https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html) and scroll up to the part that reads "For-In Loops" (or do a Command-F to search for that text on the page).
+ 
+ Your instructor will walk you through the syntax for the 'for-in' loops for numbers and the 'while' loops.
+ 
+ The **key takeaway** is that for-in loops are great for when you know how many times you want to repeat something at the very start of the loop and while loops are great for when you *don't* know how many times something needs to be repeated.
+ 
+ Once you've done that work through the following exercises:
+ */
+
+/*:
+ ### Exercise
+ Print out the integers from 1 to 10, starting at 1 and going up to (and including) 10.
+ Be prepared to both show your code to the rest of the class **and** to explain why you used the type of loop that you did.
+ 
+ ### Exercise
+ First, figure out how to randomly pick a whole number from 1 to 10, including both 1 and 10, in Swift.
+ Next, write a loop that will keep picking a random number and printing it until it randomly picks your favorite number from 1 to 10.  Then it will stop and print out the message "THAT'S MY FAVORITE NUMBER!!!
+Be prepared to both show your code to the rest of the class **and** to explain why you used the type of loop that you did.
+ 
+ ## More Practice
+ There's lots of resources available on the Internet to help you learn programming in general, and swift in particular.
+ 
+ Try looking through this [We ♥ Swift website](https://www.weheartswift.com/conditionals/) to get more practice using these various structures in Swift
+ */
+
+/*: ## Collections (including Arrays)
+ 
+ Open up [The docs on the Swift language from Apple on 'Collection Types'](https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html) and follow along as the instructor provides a brief overview of arrays, set, and dictionaries.
+ 
+ ### Exercise
+ 
+ Working with your group, decide whether an array, a set, or a dictionary would be best for storing the folloing data:
+ 
+ 1. When you go to the supermarket they'll often offer you a 'loyalty card', which gives you discounts on the stuff you buy and has a number printed on the back (in the form of a bar code).  This allows the supermarket to track what you've bought over time in order to predict what to stock in the store, what sort of advertisements to send you, etc, etc.
+ When a person walks up to the register they hand the card to the cashier who scans the number.  The computer system then needs to use that number to look up all the rest of your information.
+ 
+ 2. Let's say you're writing an app to keep track of flocks of penguins in the Antarctic.  For this exercise let's assume that when two flocks of penguins meet each other they may choose to join together into a single, larger flock.  Because of this you don't care what order the flock is stored in the computer but it's very important that you can merge flocks of penguins together.
+ 
+ 3. After customers are done shopping at the supermarket they get in line to check out.  What's the best collection to represent the line of people in a particular order?
+ (It's very important to maintain the order - customers get angry when other people are wllowed to "cut" in front of them in line!)
+ 
+ ### Exercise
+ 
+ Working with your group write some code that will create an Array that contains the names of all the members of your family.  Print out all the names using a for-in loop.
+ */
+// Write your code here:
+
+
+/*:
+ ### Exercise
+ Working with your group write some code that will create an Dictionary that contains the age of each person in your family.  Print out all the names using a for-in loop.
+ Question: is it better to use the names, or the ages as the 'key' value for the dictionary?  Why?
+ 
+ */
+// Write your code here:
+
 
 
 ////////////////////////////////////////////////// Have students add to a Teams wiki? ///////////////////////////////
