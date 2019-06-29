@@ -289,6 +289,34 @@ Be prepared to both show your code to the rest of the class **and** to explain w
  */
 // Write your code here:
 
+
+/*:
+ ### Exercise
+ Write a Swift program to count the number of 5's in a given array of integers.
+ 
+ */
+// Write your code here:
+
+
+ /*:
+ ### Exercise
+ You are given an array of integers. Find out the frequency of each one.
+The frequency of a number is the number of times it appears in the array.
+Print the numbers in ascending order followed by their frequency.
+ 
+ */
+// Write your code here:
+
+
+ /*:
+ ### Exercise
+Explore dictionaries and sets -operations by working with your team and save them on your repository.
+ 
+ */
+// Write your code here:
+
+
+
 /*:
  ## Functions
  
