@@ -31,8 +31,9 @@ print("Hello, TNT!")
  On three separate lines, print your first name, last name, and an interesting fact about yourself. Share with those around you.
  */
 // Write your code here:
-
-
+print("Diwash")
+print("Biswa")
+print("I love soccer/football")
 /*:
  ## Growth mindset
  Here in the TNT program we're looking to both challenge ***and*** support you.  One of the most important skills you
@@ -51,7 +52,9 @@ print("Hello, TNT!")
  Definition of Done: The group is done with this exercise when ***everyone*** understands this well enough to be able to explain it to the rest of the class.
  */
 // Write your code here:
-
+print("A", terminator:"")
+print("B", terminator:"")
+print("C", terminator:"")
 /*:
  ## Getting input from the user via the keyboard
  
@@ -68,7 +71,7 @@ myVariable = 50
 let myConstant = 42
 
 //: As you can see above, we were able to change ***myVariable*** since it was instantiated with the ***var*** keyword. Try to change the value of *myConstant* below (by uncommenting the next line), what happens?
-// myConstant = 5
+ //myConstant = 5 //cannot assign to a new value because myConstant is a constant and cannot be modified
 
 /*:
  You should get an error that tells you that you cannot assign a new value to a constant, **comment out the above line to get rid of this error!**
@@ -80,8 +83,9 @@ let myConstant = 42
  - A variable named ***myShool*** that equals the name of your school
  */
 // Create values here
-
-
+var myAge = 20
+let myName = "Diwash Biswa"
+var mySchool = "Washington State University"  //could be let cuz you don't change school so much
 /*:
  ### Excercise:
  Work with the people in your group to discuss whether it would be better to use a **var** or a **let** to declare each of the following.  Also come up with a good, informative name for each var/let.
@@ -107,7 +111,7 @@ let myConstant = 42
  
  */
 // Write your code here:
-
+//int, double, float, string, char, boolean, tuples, optionals
 
 
 //: When assigning a value, if you do not explicitly assign the data type (String, int, double, boolean, etc) Swift will guess the data type itself. You can assign the data type by using: ***let/var [value name]:[data type] = [value].*** Take a look at examples below:
@@ -123,9 +127,9 @@ let explicitDouble: Double = 70
  - Eplicit double constant named ***combinedAge*** that stores the sum of your age and the age of another person next to you.
  */
 // Create values here
-
-
-
+let myGrade: String = "Junior"
+let myBuilding: Int = 32
+let combinedAge: Double = 40
 /*:
  ## Converting to another data type
  You cannot implicitly convert values to another data types in Swift. However, to convert data types explicitly, you can make an instance of the desired type like so: ***[new data type]([value name]).*** Here are a few examples:
@@ -137,6 +141,7 @@ String(15) // converts the int 15 to the string "15"
 //: ## Printing variables
 //: if you want to include values in a string, you can use ***/([value name])*** to include the value. Here is an example:
 let applesCount = 3
+print("")
 print("I have \(applesCount) apples!")
 
 /*:
@@ -148,13 +153,13 @@ print("I have \(applesCount) apples!")
 */
 
 // Write your code here:
-
-
-
-//: ### EXAMPLE SOLUTION:
 var fiveString:String = "5"
 var fiveInt = Int(fiveString)
-print("Random sentence with five in it: \(fiveInt)") // ignore the warning over here ->
+print("Converted value: \(fiveString)")
+//: ### EXAMPLE SOLUTION:
+//var fiveString:String = "5"
+//var fiveInt = Int(fiveString)
+//print("Random sentence with five in it: \(fiveInt)") // ignore the warning over here ->
 
 /*:
  ### Excercise:
@@ -165,8 +170,8 @@ print("Random sentence with five in it: \(fiveInt)") // ignore the warning over 
  */
 
 // Write your code here:
-
-
+//It's easier to store textual in string than in a char array; easier to manipulate string
+//Discussion among the teammates
 /*:
  ## Conditional statements:
  Open up [The docs on the Swift language from Apple on 'Control Flow'](https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html) and scroll down to the part that reads "Conditional Statements" (or do a Command-F to search for that text on the page).
@@ -177,6 +182,18 @@ print("Random sentence with five in it: \(fiveInt)") // ignore the warning over 
 */
 
 var temperature = 30
+if (temperature <= 42)
+{
+    print("It's cold!")
+}
+else if (temperature > 42 && temperature < 75)
+{
+    print("It's perfect!")
+}
+else
+{
+    print("It's hot!")
+}
 /*:
  ### Exercise
  If the temperature is less than 42 degrees print a message saying "It's cold!"
